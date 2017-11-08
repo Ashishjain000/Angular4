@@ -1,0 +1,19 @@
+<div class="container" *ngIf="vehicle">
+   <table class="table">
+     <tr>
+       <td><label>id</label></td>
+       <td>{{vehicle.id}}</td>
+     </tr>
+     <tr>
+        <td><label>Number</label></td>
+        <td><input [(ngModel)]="vehicle.vehicleNumber" placeholder="Number"/></td>
+      </tr>
+      <tr>
+          <td><label>Type</label></td>
+          <td><input [(ngModel)]="vehicle.Type" placeholder="Type"/></td>
+      </tr>
+      <tr>
+        <td><button (click)="goBack">Back</button></td>
+      </tr>
+   </table>
+</div>

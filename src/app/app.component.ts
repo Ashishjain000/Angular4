@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import {VehicalListCompoentComponent } from './vehical-list-component/vehical-list-compoent.component';
 
 @Component({
   selector: 'app-root',
