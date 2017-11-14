@@ -14,7 +14,7 @@ export class VehicalListCompoentComponent implements OnInit {
   selectedvehicle:vehicle;
 
   constructor(private vehicleservice:vehicleService) {
-      this.vehicles = this.vehicleservice.getvehicles();
+     this.vehicleservice.getvehicles().then(vehicle=>this.vehicles=vehicle);
    }
 
   ngOnInit() {

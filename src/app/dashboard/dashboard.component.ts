@@ -20,6 +20,6 @@ export class DashboardComponent implements OnInit {
   }
 
   getvehicles():void{
-    this.vehicles= this.vehicleservice.getvehicles();
+    this.vehicleservice.getvehicles().then(vehicle=>this.vehicles=vehicle);
   }
 }
